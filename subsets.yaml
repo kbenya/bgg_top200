@@ -1,3 +1,7 @@
 complete:
   branch: main
   default: true
+top_10:
+  branch: top_10
+  sampling_kwargs:
+    num_bg_ratings: 10
