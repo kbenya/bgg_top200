@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tables>
+    <bg_details>
+        <columns>
+            <index>
+                <type>str</type>
+                <description>BGG id</description>
+            </index>
+            <bgg_rank>
+                <type>int</type>
+                <description>WIP</description>
+            </bgg_rank>
+            <name>
+                <type>str</type>
+                <description>WIP</description>
+            </name>
+            <url>
+                <type>str</type>
+                <description>WIP</description>
+            </url>
+            <release_year>
+                <type>int</type>
+                <description>WIP</description>
+            </release_year>
+            <description>
+                <type>str</type>
+                <description>WIP</description>
+            </description>
+            <minplayers>
+                <type>int</type>
+                <description>WIP</description>
+            </minplayers>
+            <maxplayers>
+                <type>int</type>
+                <description>WIP</description>
+            </maxplayers>
+            <num_ratings>
+                <type>int</type>
+                <description>WIP</description>
+            </num_ratings>
+            <avg_rating>
+                <type>float</type>
+                <description>WIP</description>
+            </avg_rating>
+            <bgg_rating>
+                <type>int</type>
+                <description>WIP</description>
+            </bgg_rating>
+            <stddev_rating>
+                <type>float</type>
+                <description>WIP</description>
+            </stddev_rating>
+            <owned>
+                <type>int</type>
+                <description>WIP</description>
+            </owned>
+            <trading>
+                <type>int</type>
+                <description>WIP</description>
+            </trading>
+            <wanting>
+                <type>int</type>
+                <description>WIP</description>
+            </wanting>
+            <wishing>
+                <type>int</type>
+                <description>WIP</description>
+            </wishing>
+            <num_comments>
+                <type>int</type>
+                <description>WIP</description>
+            </num_comments>
+            <num_weights>
+                <type>int</type>
+                <description>WIP</description>
+            </num_weights>
+            <average_weight>
+                <type>int</type>
+                <description>WIP</description>
+            </average_weight>
+        </columns>
+        <description>BGG boardgame'sx basic information</description>
+    </bg_details>
+
+    <bg_plus_info>
+        <columns>
+            <index>
+                <type>int</type>
+                <description>Num of row</description>
+            </index>
+            <bg_id>
+                <type>int</type>
+                <description>WIP</description>
+            </bg_id>
+            <subgroup>
+                <type>str</type>
+                <description>WIP</description>
+            </subgroup>
+            <subgroup_id>
+                <type>str</type>
+                <description>WIP</description>
+            </subgroup_id>
+            <value>
+                <type>str</type>
+                <description>WIP</description>
+            </value>
+        </columns>
+        <description>BGG boardgames' plus information like mechanincs, extensions...</description>
+    </bg_plus_info>
+
+    <users>
+        <columns>
+            <index>
+                <type>str</type>
+                <description>Username</description>
+            </index>
+            <user_url>
+                <type>str</type>
+                <description>user's url at bgg</description>
+            </user_url>
+            <country>
+                <type>str</type>
+                <description>user's given country</description>
+            </country>
+        </columns>
+        <description>BGG users</description>
+    </users>
+
+    <ratings>
+        <columns>
+            <index>
+                <type>int</type>
+                <description>Num of row</description>
+            </index>
+            <bg_id>
+                <type>int</type>
+                <description>Boardgame id</description>
+            </bg_id>
+            <rating>
+                <type>float</type>
+                <description>Num of rating</description>
+            </rating>
+            <user_name>
+                <type>str</type>
+                <description>Username</description>
+            </user_name>
+            <date>
+                <type>date</type>
+                <description>Rating's date</description>
+            </date>
+            <comment_text>
+                <type>str</type>
+                <description>Comment</description>
+            </comment_text>
+            <summary_item_meta>
+                <type>str</type>
+                <description>Ownership status</description>
+            </summary_item_meta>
+        </columns>
+        <description>BGG users' ratings</description>
+    </ratings>
+</tables>
