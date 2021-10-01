@@ -1,0 +1,6 @@
+[core]
+    remote = complete
+['remote "complete"']
+    url = gdrive://1m5QjbUDjTBADrBpgORU5QROHMeGf8W29
+['remote "subset-1"']
+    url = gdrive://10-2veINXIIhWgH95aJGQifLeZ874yDaY
