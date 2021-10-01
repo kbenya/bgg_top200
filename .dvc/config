@@ -1,5 +1,5 @@
 [core]
-    remote = complete
+    remote = subset-1
 ['remote "complete"']
     url = gdrive://1m5QjbUDjTBADrBpgORU5QROHMeGf8W29
 ['remote "subset-1"']
