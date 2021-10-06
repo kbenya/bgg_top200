@@ -1,0 +1,222 @@
+---
+bgg:
+  tables:
+    boardgames:
+      columns:
+        bg_id:                     
+          dtpye: "int"
+          description: "WIP"
+        bgg_rank:                  
+          dtpye: "int"
+          description: "WIP"         
+        name:
+          dtpye: "str"
+          description: "WIP"
+        url:           
+          dtpye: "str"
+          description: "WIP"
+        release_year:                    
+          dtpye: "datetime"
+          description: "WIP"
+        desc:                     
+          dtpye: "str"
+          description: "WIP"
+        minplayers:                     
+          dtpye: "int"
+          description: "WIP"
+          instance_name: "player_num_group"
+        maxplayers:                    
+          dtpye: "int"
+          description: "WIP"
+          instance_name: "player_num_group"
+        num_ratings:                    
+          dtpye: "int"
+          description: "WIP"
+          instance_name: "rating_group"
+        avg_ratings:                    
+          dtpye: "float"
+          description: "WIP"
+          instance_name: "rating_group"
+        bgg_rating:                    
+          dtpye: "float"
+          description: "WIP"
+          instance_name: "rating_group"
+        stddev_rating:                    
+          dtpye: "float"
+          description: "WIP"
+          instance_name: "rating_group"
+        owned:                     
+          dtpye: "int"
+          description: "WIP"
+          instance_name: "relation_group"
+        trading:                     
+          dtpye: "int"
+          description: "WIP"
+          instance_name: "relation_group"
+        wanting:                    
+          dtpye: "int"
+          description: "WIP"
+          instance_name: "relation_group"
+        wishing:                    
+          dtpye: "int"
+          description: "WIP"
+          instance_name: "relation_group"
+        num_comments:                    
+          dtpye: "int"
+          description: "WIP"
+        num_weights:                    
+          dtpye: "float"
+          description: "WIP"
+          instance_name: "weights_group"
+        average_weights:                    
+          dtpye: "float"
+          description: "WIP"
+          instance_name: "weights_group"
+      subject_of_records: "Boardgames"
+      index_cols: "bg_id"
+      partitioning_cols: null
+      partition_max_rows: null
+      description: "WIP"
+      column_groups:
+        player_num_group:
+          columns:
+            - "minplayers"
+            - "maxplayers"
+          description: "WIP"
+        rating_group:
+          columns:
+            - "num_ratings"
+            - "avg_ratings"
+            - "bgg_rating"
+            - "stddev_rating"
+          description: "WIP"
+        relation_group:
+          columns:
+            - "owned"
+            - "trading"
+            - "wanting"
+            - "wishing"
+          description: "WIP"
+        weights_group:
+          columns:
+            - "num_weights"
+            - "average_weights"
+          description: "WIP"
+    user:
+      columns:
+        user_id:                     
+          dtpye: "int"
+          description: "WIP"
+        user_url:                    
+          dtpye: "str"
+          description: "WIP"
+        country:                  
+          dtpye: "str"
+          description: "WIP"
+      subject_of_records: "Users"
+      index_cols: "user_id"
+      partitioning_cols: null
+      partition_max_rows: null
+      description: "WIP"
+    rating:
+      columns:
+        bg_id:
+          dtpye: "int"
+          description: "WIP"
+          subject: "boardgames/bg_id"
+        rating:
+          dtpye: "float"
+          description: "WIP"
+        user_name:
+          dtpye: "str"
+          description: "WIP"
+          subject: "user/user_id"
+        date:
+          dtpye: "datetime"
+          description: "WIP"
+        comment_text:
+          dtpye: "str"
+          description: "WIP"
+        summary_item_meta:
+          dtpye: "str"
+          description: "WIP"
+      subject_of_records: "Ratings"
+      index_cols:
+        - "bg_id"
+        - "user_name"
+      partitioning_cols: null
+      partition_max_rows: null
+      description: "WIP"
+    subgroup:
+      columns:
+        subgroup_id:                    
+          dtpye: "int"
+          description: "WIP"
+        subgroup_type:                   
+          dtpye: "str"
+          description: "WIP"
+        subgroup_name:           
+          dtpye: "str"
+          description: "WIP"
+        desc: 
+          dtpye: "str"
+          description: "WIP"
+      subject_of_records: "Subgroups"
+      index_cols: "subgroup_id"
+      partitioning_cols: null
+      partition_max_rows: null
+      description: "WIP"
+    microbadge:
+      columns:
+        micro_id:             
+          dtpye: "int"
+          description: "WIP"
+        micro_name:         
+          dtpye: "str"
+          description: "WIP"
+        desc:                
+          dtpye: "str"
+          description: "WIP"
+      subject_of_records: "Microbadges"
+      index_cols: "micro_id"
+      partitioning_cols: null
+      partition_max_rows: null
+      description: "WIP"
+    bg_subgroup:
+      columns:
+        bg_id:                    
+          dtpye: "int"
+          description: "WIP"
+          subject: "boardgames/bg_id"
+        subgroup_id:                   
+          dtpye: "int"
+          description: "WIP"
+          subject: "subgroup/soubgroup_id"
+      subject_of_records: "BG-Subgroup connections"
+      index_cols: 
+        - "bg_id"                
+        - "subgroup_id"                 
+      partitioning_cols: null
+      partition_max_rows: null
+      description: "WIP"
+    user_micro:
+      columns:
+        user_id:                    
+          dtpye: "int"
+          description: "WIP"
+          subject: "user/user_id"
+        micro_id:                   
+          dtpye: "int"
+          description: "WIP"
+          subject: "microbadges/micro_id"
+      subject_of_records: "User-Microbadge connections"
+      index_cols:
+        - "user_id"                    
+        - "micro_id"                  
+      partitioning_cols: null
+      partition_max_rows: null
+      description: "WIP"
+  description: "WIP"
+
+
+
